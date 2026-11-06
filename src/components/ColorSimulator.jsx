@@ -184,6 +184,12 @@ const ColorSimulator = () => {
     };
   }, [activeScene, activeColor]);
 
+  // Enlace directo a WhatsApp con el color seleccionado
+  const getQuoteWhatsAppUrl = () => {
+    const text = `¡Hola Pinturas Solís! Estuve usando su simulador de color en la web y me encantó el color "${activeColor.name}" (${activeColor.hex}) para mi proyecto. ¿Me podrían dar una cotización aproximada?`;
+    return `https://wa.me/527861391921?text=${encodeURIComponent(text)}`;
+  };
+
   return (
     <section className="simulator" id="simulador">
       <div className="container">
@@ -287,8 +293,14 @@ const ColorSimulator = () => {
               <div className="pro-indicator">
                 <Wand2 size={12}/> Corrección IA activada
               </div>
-              <a href="#contacto" className="btn-primary w-full" style={{ marginTop: '0.5rem' }}>
-                Cotizar este color
+              <a 
+                href={getQuoteWhatsAppUrl()} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn-primary w-full" 
+                style={{ marginTop: '0.5rem' }}
+              >
+                Cotizar este color por WhatsApp
               </a>
             </div>
           </div>
