@@ -121,6 +121,8 @@ const ColorSimulator = () => {
 
         // Procesamiento Píxel por Píxel
         for (let i = 0; i < data.length; i += 4) {
+          const pixelIndex = i / 4;
+          const y = Math.floor(pixelIndex / canvas.width);
           const mAlpha = mData[i + 3];
           const mBrightness = (mData[i] + mData[i + 1] + mData[i + 2]) / 3;
           
