@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Home, Building2, PaintBucket, PaintRoller, Sparkles, X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Home, Building2, PaintBucket, PaintRoller, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import './Services.css';
 
 const base = import.meta.env.BASE_URL;

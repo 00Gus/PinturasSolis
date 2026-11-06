@@ -1,5 +1,5 @@
 import React from 'react';
-import { PaintRoller, Phone, Mail, MapPin, Heart } from 'lucide-react';
+import { PaintRoller, Phone, Mail, MapPin } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
