@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import './Hero.css';
 
+const base = import.meta.env.BASE_URL;
+
 const Hero = () => {
   return (
     <section className="hero" id="inicio">
@@ -73,10 +75,9 @@ const Hero = () => {
         >
           <div className="bento-card hero-image-card">
             <div className="image-overlay"></div>
-            {/* Temporarily using a placeholder, later we can use one of their best works */}
             <img 
-              src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-              alt="Interior pintado con elegancia" 
+              src={`${base}assets/hero_painter.jpg`} 
+              alt="Pintor profesional trabajando con rodillo y acabados limpios" 
               className="hero-img"
             />
           </div>
